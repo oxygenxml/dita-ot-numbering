@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="org.dita.pdf2.topic.numbering">
+    <require plugin="org.dita.pdf2"/>
+    <feature extension="package.version" value="0.1"/>
+    
+    <feature extension="dita.conductor.pdf2.param" file="pdf2ExtensionParameters.xml"/>
+    <feature extension="dita.xsl.xslfo" value="customization.xsl" type="file"/>
+   
+    <transtype name="pdf" desc="PDF">
+        <param name="numbers-before-title"
+            desc="When this option is enabled the topic's number will be presented before the topics's title."
+            type="enum">
+            <val default="yes">no</val>
+            <val>yes</val>
+        </param>
+        
+        <param name="numbers-before-title-depth" 
+            desc="Specifies the depth of the topics that will be numbered when the 'numbers-before-title' option is enabled."
+            type="integer"/>
+    </transtype>
+</plugin>

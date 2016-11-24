@@ -1,0 +1,11 @@
+<dummy>
+    <param 
+        name="numbers-before-title" 
+        expression="${numbers-before-title}" 
+        if="numbers-before-title"/>
+    
+    <param name="numbers-before-title-depth" 
+        expression="${numbers-before-title-depth}" 
+        if="numbers-before-title-depth">
+    </param>
+</dummy>
