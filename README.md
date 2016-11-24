@@ -16,6 +16,6 @@ To install this plugin please follow the next steps:
 1. Download **DITA-OT 2.4**
 2. Copy this customization plugin into the **DITA-OT/plugins** folder
 3. Run the **DITA-OT integrator**
-4. Set the **numbers-before-title** parameter to `yes` to enable this feature, see below the available parameters.
+4. Set the **numbers-before-title** parameter to `yes` to enable this feature.
 
 Please note that this plugin was tested with **DITA-OT 2.4**.
