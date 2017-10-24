@@ -25,10 +25,11 @@
         <xsl:variable name="mapTopics" select="key('map-id', $id)"/>
         
         <!--
-            Do not generate numbers for firs level chapters and appendix topics
+            Do not generate numbers for first level chapters, appendix topics and parts.
         -->        
         <xsl:if test="not(contains($mapTopics[1]/@class, ' bookmap/chapter ')) 
-            and not(contains($mapTopics[1]/@class, ' bookmap/appendix '))">
+            and not(contains($mapTopics[1]/@class, ' bookmap/appendix '))
+            and not(contains($mapTopics[1]/@class, ' bookmap/part '))">
             <fo:inline>
                 <xsl:for-each select="$mapTopics[1]">
                     <xsl:variable name="depth"
