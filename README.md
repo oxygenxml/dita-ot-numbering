@@ -26,3 +26,9 @@ To use this PDF customization plugin, use one of the following methods:
     dita.bat -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -output=D:/workspace/userguide-private/DITA/out-pdf -Dnumbers-before-title=yes
 ```
 Please note that this plugin was tested with **DITA-OT 2.4**.
+
+Copyright and License
+---------------------
+Copyright 2018 Syncro Soft SRL.
+
+This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/dita-ot-numbering/blob/master/LICENSE)
