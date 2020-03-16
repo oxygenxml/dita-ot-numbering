@@ -45,7 +45,7 @@
                         <xsl:when
                             test="
                             ancestor-or-self::*[contains(@class, ' bookmap/appendix ')] and
-                            $depth lt ($numbers-before-title-depth + 1)">
+                            $depth lt (xs:integer($numbers-before-title-depth) + 1)">
                             <!--<xsl:number
                                 count="
                                 *[contains(@class, ' map/topicref ')]
@@ -53,7 +53,7 @@
                                 format="A.1.1" level="multiple"/>-->
                         </xsl:when>
                         <!-- Normal topics -->
-                        <xsl:when test="$depth lt ($numbers-before-title-depth + 1)">
+                        <xsl:when test="$depth lt (xs:integer($numbers-before-title-depth) + 1)">
                             <xsl:number
                                 count="
                                 *[contains(@class, ' map/topicref ')]
