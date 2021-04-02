@@ -59,11 +59,11 @@
                                 *[contains(@class, ' map/topicref ')]
                                 [not(ancestor-or-self::*[contains(@class, ' bookmap/frontmatter ')])]"
                                 format="1.1" level="multiple"/>
+                            <xsl:value-of select="' '"/>
                         </xsl:when>
                     </xsl:choose>
                 </xsl:for-each>
             </fo:inline>
-            <xsl:value-of select="' '"/>
         </xsl:if>
                 
         <xsl:apply-templates/>
