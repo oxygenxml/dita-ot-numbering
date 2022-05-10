@@ -23,7 +23,7 @@ To use this PDF customization plugin, use one of the following methods:
 3. Install the plugin by running the command ``dita-ot-dir/bin/dita --install=plug-in-zip``. See more details in the [Installing plug-ins](http://www.dita-ot.org/2.4/dev_ref/plugins-installing.html) topic from the DITA-OT documentation.
 4. Invoke the PDF transformation using the **numbers-before-title** parameter in a command, as in the following example:
 ```
-    dita.bat -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -output=D:/workspace/userguide-private/DITA/out-pdf -Dnumbers-before-title=yes
+    dita.bat -f pdf2 -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -output=D:/workspace/userguide-private/DITA/out-pdf -Dnumbers-before-title=yes
 ```
 Please note that this plugin was tested with **DITA-OT 2.4**.
 
