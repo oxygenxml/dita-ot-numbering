@@ -18,17 +18,16 @@ To use this PDF customization plugin, use one of the following methods:
 2. To install the plugin and transform it, follow the procedure found here: https://www.oxygenxml.com/doc/ug-editor/topics/dita-ot-install-plugin.html
 
 * **From a command line** - Follow these steps:
-1. Download **DITA-OT 2.4** 
+1. Download **DITA-OT** 
 2. Download the ZIP archive associated with this project by using the ``Clone or download`` button.
-3. Install the plugin by running the command ``dita-ot-dir/bin/dita --install=plug-in-zip``. See more details in the [Installing plug-ins](http://www.dita-ot.org/2.4/dev_ref/plugins-installing.html) topic from the DITA-OT documentation.
+3. Install the plugin by running the command ``dita-ot-dir/bin/dita --install=plug-in-zip``. See more details in the [Installing plug-ins](https://www.dita-ot.org/3.7/topics/plugins-installing.html) topic from the DITA-OT documentation.
 4. Invoke the PDF transformation using the **numbers-before-title** parameter in a command, as in the following example:
 ```
     dita.bat -f pdf2 -i file:/D:/workspace/userguide-private/DITA/UserManual.ditamap -output=D:/workspace/userguide-private/DITA/out-pdf -Dnumbers-before-title=yes
 ```
-Please note that this plugin was tested with **DITA-OT 2.4**.
 
 Copyright and License
 ---------------------
-Copyright 2018 Syncro Soft SRL.
+Copyright 2022 Syncro Soft SRL.
 
 This project is licensed under [Apache License 2.0](https://github.com/oxygenxml/dita-ot-numbering/blob/master/LICENSE)
